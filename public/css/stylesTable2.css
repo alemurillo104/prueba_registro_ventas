@@ -1,0 +1,6 @@
+/*Creates table with scrollable tbody*/
+#tbody1 {
+    /* display:block; */
+    height:150px;
+    overflow:auto;
+  }

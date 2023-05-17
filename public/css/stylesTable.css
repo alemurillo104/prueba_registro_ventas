@@ -1,0 +1,26 @@
+/*Creates table with scrollable tbody*/
+#tbody1 {
+    display:block;
+    height:150px;
+    /* width:550px; */
+    overflow:auto;
+  }
+  #thead1, #tbody1 #tr1 {
+    text-align: center;
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+  /* thead {
+    width: calc( 100% - 1em )
+  } */
+  /* table {
+    width:50%;
+  } */
+
+  #containerCoti{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }

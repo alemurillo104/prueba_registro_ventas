@@ -1,0 +1,630 @@
+/**
+*Ceci est le fichier de style général de la page
+*@author: @Kengza
+**/
+
+/* Définition des polices */
+
+/* @font-face {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+} */
+
+/* Polices générales de la page */
+
+.titulo{
+    font-size: calc(2em + 1vw); 
+    font-weight: 700;
+}
+@media only screen and (max-width: 992px) {
+    .titulo {
+        text-align: center;
+    }
+}
+
+
+main{
+    background-color: green;
+    background-image: url("/assets/img/bannerChicosC.png");
+    /* background-repeat: no-repeat; */
+    /* background-attachment: scroll; */
+    /* background-position: center center; */
+    /* background-size: auto; */ 
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: auto 25%; */
+
+}
+
+/* @media only screen and (max-width: 1109px) {
+    main {
+        background-repeat: no-repeat;
+        background-size: auto 35%;
+    }
+} */
+
+@media only screen and (max-width: 992px) {
+    main {
+        background-repeat: no-repeat;
+        background-size: auto 25%;
+    }
+}
+
+body {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    /* font-family: Segoe UI, Arial, Helvetica, sans-serif/*/
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    /* color: hsl(0, 2%, 20%); */
+    /* color: hsl(257, 7%, 63%); */
+    font-weight: 500;
+}
+@media only screen and (max-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+    
+}
+/* Les titres: polices et font-size */
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+/* *********************** PAGE CONTAINER ***************************** */
+
+/* ================ DÉBUT DU HEADER ============================== */
+
+/************** Navbar */
+nav {
+    line-height: normal;
+    height: auto;
+    box-shadow: none;
+    padding: 3rem 6rem 3rem 7rem;
+    background-color: transparent;
+    /* background-color: white !important; */
+}
+.nav-wrapper {
+    line-height: normal;
+}
+
+nav li a {
+    font-size: 0.96rem;
+    color:  hsl(257, 7%, 63%);
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+}
+nav li a:hover {
+    color: hsl(255, 11%, 22%);
+    background-color: transparent;
+}
+nav li a.nav-action {
+    padding: 0 25px;
+}
+nav li a.nav-action:hover {
+    color: white !important;
+    border-radius: 23px;
+    background-color: hsla(180, 66%, 49%, 0.5);
+    transition: none;
+}
+nav ul a {
+    transition: none;
+    outline: none;
+}
+.desk-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}   
+.desk-nav div:nth-of-type(1) {
+    margin-left: 12rem;
+}
+.brand-logo img {
+    margin-top: 3px;
+}
+.sidenav {
+    background-color: hsl(257, 27%, 26%);
+    padding: 2rem !important;
+    text-align: center;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 7rem;
+    /* transform: translateX(50%); */
+}
+.divider {
+    background-color: rgb(78,68,103) !important;
+}
+.sidenav li a{
+    color: white !important;
+    font-size: 1.2rem;
+}
+.sidenav li {
+    margin-bottom: 1rem;
+}
+.sidenav li a:not(.sub-signup):hover {
+    background-color: transparent !important;
+}
+.sub-signup:hover, .sub-signup {
+    color: white !important;
+    border-radius: 23px;
+    background-color: hsl(180, 66%, 49%) !important;
+    transition: none;
+}
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: auto !important;
+    }
+}
+/********* End Navbar */
+
+/******** Début header-container */
+
+.header-container {
+    margin-top: 1rem;
+    margin-left: 7rem;
+    overflow-x: hidden;
+    
+}
+.header-content h1 {
+    font-size: 4.3rem;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    color: hsl(255, 11%, 22%);
+    margin-bottom: 0;
+}
+.header-content p {
+    font-size: 1.4rem;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+.hinfos {
+    /* padding-right: 0px; */
+    padding-right: 2.6rem !important;
+    width: 20cm;
+    /* padding-left: 8.6rem !important; */
+    /* width: 30cm; */
+}
+.header-infos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.himage img{
+    margin-left: 7rem !important;
+    margin-top: 20px;
+}
+.hbtn {
+    padding: 15px 40px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 33px;
+    color: white;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    
+}
+.hinfos div:nth-of-type(1) {
+    margin-top: 2rem;
+    /* margin-top: 3rem; */
+}
+
+header {
+    /* margin-bottom: 3rem; */
+    /* background-image: url("/assets/img/bannerChicosB.png"); */
+
+}
+@media only screen and (max-width: 992px) {
+    .header-infos {
+        flex-flow: column-reverse wrap;
+        align-items: center;
+        align-content: space-around;
+    }
+    .header-container {
+        margin-left: 2rem;
+        overflow-x: initial !important;
+    }
+    .himage img {
+        margin-left: 1rem !important;
+    }
+    .hinfos {
+        width: auto;
+        padding-right: 0;
+    }
+    .header-content h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .header-content p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .hinfos div:nth-of-type(1) {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+}
+.hamburger {
+    float: right !important;
+    outline: none;
+    color: rgb(157,156,163);
+    transform: translateX(176%);
+}
+nav .sidenav-trigger i {
+    font-size: 2.3rem !important;
+    line-height: normal !important;
+}
+.sidenav-overlay {
+    background-color: transparent;
+}
+
+/******** End Header */
+
+/* Section Violette de formulaire */
+.linkArea-container {
+    margin: 0rem  7rem;
+    /* margin: 3rem  7rem; */
+    height: 10rem;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    /* background-image: url("../images/bg-shorten-desktop.svg"); */
+    background-image: url("../assets/img/bannerChicosB.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem 7rem 0 7rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: -7.5rem;
+}
+@media only screen and (max-width: 992px) {
+    .linkArea-container {
+        margin: 2rem !important;
+        padding: 0.5rem 2rem 0 2rem !important;
+        height: 12rem;
+        width: 90vw !important;
+        background-image: url("../images/bg-shorten-mobile.svg");
+    }
+    .linkArea form {
+        flex-flow: column wrap !important;
+        justify-content: center !important;
+    }
+    .linkArea form input[type="url"]
+    {
+        width: 80% !important;
+        height: 2rem !important;
+        margin-right: 0 !important;
+        /* margin-top: 2rem !important; */
+    }
+    .linkArea-btn {
+        /* width: 289% !important; */
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem !important;
+    }
+}
+.linkArea form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+}
+.linkArea form input[type="url"] {
+    width: 45vw;
+    height: 2.5rem;
+    border: none;
+    border-radius: 8px;
+    color: hsl(257, 7%, 63%);
+    font-size: 1.2rem;
+    padding: 0.6rem 2.5rem;
+    margin-right: 2.5rem;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.linkArea-btn {
+    width: auto;
+    background-color: hsl(180, 66%, 49%);
+    padding: 1.15rem 2rem !important;
+    color: white !important;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    border: none;
+    
+}
+.linkArea form input[type="url"]:invalid{
+    border: 3px solid hsl(0, 87%, 67%);
+}
+.linkArea input:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+.linkArea-btn:focus {
+    background-color: hsl(180, 66%, 49%);
+    outline: none;
+}
+.linkArea-btn:visited {
+    text-decoration: none;
+}
+::-webkit-input-placeholder {
+    color: hsl(255, 11%, 22%);
+}
+::-moz-placeholder {
+    color:hsl(255, 11%, 22%);
+}
+:-ms-input-placeholder {
+    color:hsl(255, 11%, 22%);
+}
+::-ms-input-placeholder {
+    color: hsl(255, 11%, 22%);
+}
+::placeholder {
+    color:hsl(255, 11%, 22%);
+}
+
+/******** End Link area  */
+
+/* Début section Advanced */
+.linkAdvanced {
+    position: relative;
+    
+    /* margin-top: 7rem; */
+    margin-top: 12.5rem;
+}
+@media only screen and (max-width: 992px) {
+    .linkAdvanced {
+        position: relative;
+        
+        margin-top: 0rem;
+        /* margin-top: 11.5rem; */
+    }
+
+    .advanced {
+        padding: 11rem 1.5rem 6rem 1.5rem !important;
+    }
+}
+.advanced {
+    padding: 11rem 7rem 6rem 7rem;
+}
+.sectionTitle {
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    /* margin-bottom: 1rem; */
+}
+.sectionTitle h3 {
+    font-size: 2rem;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    color: hsl(255, 11%, 22%);
+    margin-bottom: 0;
+}
+.sectionTitle p {
+    font-size: 1.05rem;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.advanced-content .card {
+    position: relative;
+}
+.advanced-content .card-header {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:  hsl(257, 27%, 26%);
+    top: -2.7rem;
+    left: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+@media only screen and (max-width: 992px) {
+    .timeline {
+        flex-flow: column wrap !important;
+    }
+    .timeline .card-container {
+        margin-top: 6rem !important;
+    }
+    .timeline::before {
+        width: 7px !important;
+        height: auto !important;
+        top: 8rem !important;
+        left: auto;
+        bottom: 20px;
+    }
+    .advanced-content .card-header {
+        left: calc(50% - 80px/2) !important;
+    }
+    .sectionTitle {
+        width: auto !important;
+    }
+    
+}
+.timeline {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+.timeline .card {
+    width: 22rem;
+    height: auto;
+    box-shadow: none;
+    border-radius: 8px;
+}
+.timeline .card .card-content {
+    padding-top: 4rem;
+}
+.timeline .card .card-title h5{
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    color: hsl(255, 11%, 22%);
+    font-size: 1.27rem;
+    margin-bottom: 1.5rem;
+}
+.timeline .card .card-body {
+    font-size: 0.98rem;
+    /* line-height: 10px; */
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    padding-bottom: 0.75rem;
+    
+}
+.timeline::before {
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    background-color: hsl(180, 66%, 49%);
+    content: "";
+    top: 50%;
+    left: auto;
+    display: block;
+}
+.timeline .card-container:nth-of-type(2) {
+    margin-top: 6rem;
+}
+.timeline .card-container:nth-of-type(3) {
+    margin-top: 11rem;
+}
+
+/********** End section linkarea and advanced section */
+
+/* Début Bande colorée située avant le footer */
+
+.bande-coloree {
+    height: 14rem;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+@media only screen and (max-width: 992px) {
+    .bande-coloree {
+        background-image: url("../images/bg-boost-mobile.svg");
+    }
+}
+.bande-coloree h2 {
+    margin: 0;
+    color: white;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+.bdc-btn {
+    color: white;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    background-color: hsl(180, 66%, 49%);
+    font-size: 1.2rem;
+    padding: 12px 33px;
+    border-radius: 25px;
+}
+.bdc-btnContainer {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+/* Fin Bande colorée */
+
+/* Début Footer */
+
+footer, .page-footer {
+    background-color: rgb(35,32,39) !important;
+}
+
+.page-footer, .activities, .socialMedia {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+}
+.page-footer{
+    padding: 4rem 7rem 3rem 7rem;
+    align-items: self-start !important;
+}
+.appName img {
+    filter: brightness(600%);
+    width: 82%;
+}
+.appName a {
+    outline: none;
+}
+.activities h5 {
+    font-size: 0.85rem;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.activities ul li a {
+    color: white;
+    font-size: 0.8rem;
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+.activities {
+    /* flex: 2; */
+    width: 27rem;
+}
+.activities ul li a:hover {
+    color: hsl(180, 66%, 49%);
+}
+.socialMedia {
+    width: 10rem;
+}
+.socialMedia p {
+    margin: 0;
+}
+.socialMedia a {
+    outline: none;
+}
+.socialMedia a:hover svg path{
+    fill: hsl(180, 66%, 49%);
+}
+
+@media only screen and (max-width: 992px) {
+    .page-footer, .activities {
+        flex-flow: column wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .activities {
+        text-align: center !important;
+        width: auto !important;
+    }
+    .activities h5 {
+        margin-top: 2rem !important;
+    }
+    .socialMedia {
+        width: 15 !important;
+        margin-top: 2rem;
+    }
+}
+/* Fin Footer */

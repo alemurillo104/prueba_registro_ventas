@@ -1,0 +1,275 @@
+/* my buttons styles */
+/* Referencia a una clase */
+.buttonText{
+    font-size: calc(0.7em + 0.1vw);
+}
+/* Referencia por id */
+#buttonIdText{
+    font-size: calc(0.7em + 0.1vw);
+}
+
+/* my card styles */
+
+.myCard{
+    background-color:#deeaee; 
+    padding: 20px 60px;
+    
+}
+
+.myCreateCard{
+    /* background-color:#edf8fb;  */
+    /* background-color:#edf8fb;  */
+    background-color:#e0ebee; 
+    /* background-color:#deeaee;  */
+    padding: 20px 60px;
+}
+
+.myServicioCreateCard{
+    /* background-color:#edf8fb;  */
+    background-color:#e0ebee; 
+
+    /* padding: 20px 25px; */
+    padding: 20px 40px;
+}
+
+.mySubCard{
+    background-color:#deeaee; 
+    padding: 20px 25px;
+    /* padding: 20px 50px; */
+}
+
+
+.myPrecioCard{
+    background-color:#deeaee; 
+    padding: 20px 30px;
+}
+
+.editCard{
+    padding: 20px 60px;
+    /* original */
+    /* background-color:#e6f0f3;  */
+    background-color:#deeaee; 
+}
+
+.presupuestoCard{
+    padding: 15px 20px;
+    border-radius: 5px;
+    /* background-color: #bef0ff; */
+    background-color: #deeaee;
+    /* background-color:#e6f0f3; */
+    /* background-color:#edf8fb;  */
+}
+
+/* Title Styles */
+
+.indexTitle{
+    font-weight: 500;
+    font-size: calc(1em + 0.8vw);
+}
+.createTitle2{
+    font-weight: 600;
+    font-size: calc(1em + 1vw);
+    /* modificado */
+    padding-bottom: 10px; 
+}
+
+.createTitle{
+    font-weight: 600;
+    font-size: calc(1em + 1.2vw);
+    /* modificado */
+    padding-bottom: 10px; 
+}
+
+.presupuestoTitle{
+    font-size: calc(1em + 0.5vw); 
+}
+.presupuestoCreateTitle{
+    font-size: calc(1em + 0.1vw); 
+}
+.reporteTitle{
+    font-size: calc(1em + 0.1vw); 
+}
+
+.dashboardText{
+    padding: 15px 0px 5px;
+}
+
+
+.antCard{
+    background-color:#deeaee;
+    padding-left: 60px;
+    padding-right: 60px; 
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+select{
+    background-color: #deeaee;
+    /* background-color:#e6f0f3;  */
+
+    /* original pero era muy blanco */
+    /* background-color: #f0f2f3; */
+}
+
+.presupuesto-select{
+    background-color: #deeaee;
+    /* background-color:#e6f0f3;  */
+
+    /* background-color: #f0f2f3; */
+}
+
+.custom-select select{
+    padding: 0%;
+    height: 2rem;
+    background-color: #deeaee;
+
+}
+
+/*
+*/
+
+
+
+
+/* titulo */
+.tituloStyle {
+    font-size: calc(0.38em + 1vw);
+    font-weight: 700;
+}
+.ntituloStyle {
+    font-size: calc(0.38em + 0.5vw);
+    font-weight: 700;
+}
+
+/*para mi datatable*/
+/* .presupuestoCard tr, th, td {
+    background-color: black; 
+}
+
+.presupuestoCard table.dataTable tbody tr{
+    background-color: red; 
+} */
+
+
+/* para datatable */
+tr, th, td {
+    background-color: #deeaee; 
+}
+table.dataTable tbody tr{
+    background-color: #deeaee;
+}
+
+@media only screen and (max-width: 992px){
+    table.responsive-table.bordered th {
+        border-bottom: 0;
+        border-left: 0;
+    }
+}
+.border-box {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+table td {
+    /* transition: all .5s; 
+    max-width: 80px;  */
+    /* text-overflow: ellipsis*/
+
+/* Anadir esto para que la tabla responsive reduzca o puedo quitar el email para que no se muestre tambien */
+    /* max-width: 80px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden; */
+}
+
+.tabs .tab a {
+    color:black
+}
+
+.tabs .tab a:hover {
+    color: #3f48c7;
+    /* color: #ee6e73; */
+}
+.tabs .tab a.active {
+    color: #3f48c7;
+    /* color: #ee6e73; */
+}
+
+.tabs .indicator {
+    /* color: #3f48c7; */
+    background-color:  #3f48c7;
+}
+
+.tab-container{
+    padding: 20px 30px;
+}
+
+.th-text{
+    font-size: calc(0.8em + 0.1vw);
+}
+.td-text{
+    font-size: calc(0.7em + 0.1vw);
+}
+
+table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+    background-color:  #deeaee;
+    /* background-color: #f1f1f1; */
+}
+
+table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+    background-color:  #deeaee;
+    /* background-color: #fafafa; */
+}
+
+.nextLine{
+    word-wrap:break-word;
+}
+
+/* li colors sidebar */
+.opcion-li-v1{
+    background-color: rgb(224, 224, 224);
+    padding-left:25px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+/* .sidenav.sidenav.fixed{
+    border-style: solid;
+    border-width: medium;
+} */
+
+.collapsible{
+    border-top:0px;
+    border-left:0px;
+    /* border-right-color: gray; */
+}
+
+.opcion-li-v2{
+    background-color: rgba(0,0,0,0.05);
+}
+
+.collection .collection-item {
+    /* background-color: rgb(224, 224, 224); */
+    background-color: rgba(182, 174, 174, 0.336)
+
+}
+.collection a.collection-item {
+    color: black;
+}
+
+/* para los shows */
+.ul-li-a{
+    padding: 0px;
+}
+.item-li-a{
+    /* border: solid; */
+    padding: 5px 10px 5px 10px;
+}
+.my-card{
+    border-radius: 20px;
+}
+
+.input-image-botton .btn{
+    background-color: #3f48c7;
+}
